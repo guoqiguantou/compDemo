@@ -1,0 +1,74 @@
+.calendar {
+    border: 1px solid #ddd;
+
+    .calendarTop {
+        height: 50px;
+        background: #5882FB;
+        line-height: 50px;
+        display: flex;
+        justify-content: space-between;
+        color: #fff;
+        padding: 0 20px;
+
+        .calendarTopBtn {
+            width: 50px;
+            height: 50px;
+            text-align: center;
+        }
+
+        .calendarToptext {
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            p {
+                letter-spacing: 2px;
+            }
+
+            span {
+                width: 30px;
+                height: 30px;
+                background: #f60;
+                color: #fff;
+                border-radius: 2px;
+                text-align: center;
+                line-height: 30px;
+                margin-left: 10px;
+            }
+        }
+    }
+
+    .calendarWeek {
+        height: 40px;
+        line-height: 40px;
+        display: flex;
+        justify-content: space-between;
+        background: #eeeeee;
+
+        li {
+            flex: 1;
+            text-align: center;
+        }
+    }
+
+    .calendarDay {
+        li {
+            height: 40px;
+            line-height: 40px;
+            width: 14.28%;
+            display: inline-block;
+            text-align: center;
+        }
+
+        .pday,
+        .nday {
+            color: #999;
+        }
+
+        .cenday {
+            background: #b5c8ff;
+            color: #fff;
+        }
+    }
+}
